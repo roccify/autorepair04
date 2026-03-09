@@ -104,21 +104,20 @@ import Footer from '../components/Footer.astro';
   <!-- Map -->
   <section class="bg-gray-100">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 pb-16">
-      <h3 class="font-display font-bold text-2xl text-gray-800 mb-4">Find Us</h3>
-      <p class="text-gray-500 text-sm mb-4">Proudly serving Sacramento and surrounding areas</p>
-      <div class="w-full h-80 bg-gray-300 rounded overflow-hidden relative">
-        <!-- Replace the div below with your actual Google Maps embed iframe -->
-        <!-- {{GOOGLE_MAP_EMBED}} -->
-        <div class="w-full h-full flex items-center justify-center bg-brand/10 border-2 border-dashed border-brand/30 rounded">
-          <div class="text-center">
-            <svg class="w-12 h-12 text-brand/40 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-            </svg>
-            <p class="text-brand/60 font-semibold">Replace with Google Maps embed</p>
-            <p class="text-gray-400 text-sm mt-1">3250 Auburn Blvd, Sacramento, CA 95821</p>
-          </div>
-        </div>
-      </div>
+      <h3 class="font-display font-bold text-2xl text-gray-800 mb-2">Find Us</h3>
+      <p class="text-gray-500 text-sm mb-6">3250 Auburn Blvd, Sacramento, CA 95821 · Proudly serving Sacramento and surrounding areas</p>
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=3250+Auburn+Blvd+Sacramento+CA+95821"
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center gap-2 px-6 py-3 bg-brand text-white font-semibold rounded hover:bg-brand-dark transition-colors"
+      >
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        Get Directions
+      </a>
     </div>
   </section>
 
