@@ -1,0 +1,263 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<MainLayout title="Our Services" description="Auto repair services in Sacramento CA: brake repair, engine diagnostics, transmission service, AC repair, suspension, oil change. ASE-certified mechanics.">
+  <Header />
+
+  <!-- Page Banner -->
+  <section class="relative py-20 overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="/images/hero01.jpg" alt="Auto repair services" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-brand/85"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <h1 class="font-display font-bold text-4xl lg:text-5xl text-white mb-3">Our Services</h1>
+      <p class="text-blue-200 text-lg max-w-xl mx-auto">Professional auto repair and maintenance for Sacramento drivers and fleet vehicles.</p>
+      <nav class="mt-4 text-blue-300 text-sm">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-white">Services</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="py-12 bg-white border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <h2 class="font-display font-bold text-3xl text-gray-900 mb-3">Take care of your car in the garage,<br class="hidden lg:block" /> and the car will take care of you on the road.</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto">Our ASE-certified technicians use advanced diagnostic tools and manufacturer-recommended procedures to identify and fix problems accurately — the first time.</p>
+    </div>
+  </section>
+
+  <!-- SERVICE SECTIONS -->
+
+  <!-- Brake Repair -->
+  <section id="brakes" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="overflow-hidden rounded">
+          <img src="/images/service02.jpg" alt="Brake Repair Sacramento" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div>
+          <h2 class="font-display font-bold text-3xl text-gray-900 mb-3">Brake Repair & Replacement</h2>
+          <div class="w-12 h-1 bg-accent mb-5"></div>
+          <p class="text-gray-500 leading-relaxed mb-5">Complete brake inspections, pad and rotor replacement, caliper servicing, brake fluid flushing, and ABS diagnostics. Using manufacturer-recommended components and proper torque specifications, our technicians ensure your braking system performs reliably in city traffic and highway conditions.</p>
+
+          <h4 class="font-semibold text-gray-900 mb-2">Common Problems We Fix</h4>
+          <ul class="text-gray-500 text-sm space-y-1 mb-5 list-disc list-inside">
+            <li>Squealing or grinding noises while braking</li>
+            <li>Soft or spongy brake pedal</li>
+            <li>Vehicle pulling to one side when braking</li>
+          </ul>
+
+          <h4 class="font-semibold text-gray-900 mb-2">Customer Benefits</h4>
+          <ul class="text-gray-500 text-sm space-y-1 mb-6 list-disc list-inside">
+            <li>Restored braking performance and safety</li>
+            <li>Reduced wear on brake components</li>
+            <li>Reliable stopping in heavy traffic</li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-3 py-1 bg-brand/10 text-brand text-xs font-semibold rounded-full">Same-day available</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Brake fluid flush add-on</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">ABS diagnostic add-on</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Engine Diagnostics -->
+  <section id="engine" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="order-2 lg:order-1">
+          <h2 class="font-display font-bold text-3xl text-gray-900 mb-3">Engine Diagnostics</h2>
+          <div class="w-12 h-1 bg-accent mb-5"></div>
+          <p class="text-gray-500 leading-relaxed mb-5">When warning lights or engine performance issues appear, our technicians use professional diagnostic scanners and testing equipment to identify the exact cause. We analyze sensor data, error codes, and system performance to provide a clear repair plan and avoid unnecessary part replacements.</p>
+
+          <h4 class="font-semibold text-gray-900 mb-2">Common Problems We Diagnose</h4>
+          <ul class="text-gray-500 text-sm space-y-1 mb-5 list-disc list-inside">
+            <li>Check engine light on</li>
+            <li>Rough idling or engine stalling</li>
+            <li>Poor fuel economy</li>
+          </ul>
+
+          <h4 class="font-semibold text-gray-900 mb-2">Customer Benefits</h4>
+          <ul class="text-gray-500 text-sm space-y-1 mb-6 list-disc list-inside">
+            <li>Accurate identification of the problem</li>
+            <li>Prevents unnecessary repairs</li>
+            <li>Improved engine performance and reliability</li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-3 py-1 bg-brand/10 text-brand text-xs font-semibold rounded-full">Scheduled service</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Compression testing add-on</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Fuel injector cleaning</span>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded order-1 lg:order-2">
+          <img src="/images/service01.jpg" alt="Engine Diagnostics Sacramento" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transmission -->
+  <section id="transmission" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="overflow-hidden rounded">
+          <img src="/images/service03.jpg" alt="Transmission Service Sacramento" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div>
+          <h2 class="font-display font-bold text-3xl text-gray-900 mb-3">Transmission Service & Repair</h2>
+          <div class="w-12 h-1 bg-accent mb-5"></div>
+          <p class="text-gray-500 leading-relaxed mb-5">Our transmission services include fluid changes, filter replacement, system diagnostics, solenoid testing, and repairs for both automatic and manual transmissions. We follow manufacturer specifications and use high-quality fluids to help extend transmission life and prevent costly breakdowns.</p>
+
+          <h4 class="font-semibold text-gray-900 mb-2">Common Problems We Fix</h4>
+          <ul class="text-gray-500 text-sm space-y-1 mb-5 list-disc list-inside">
+            <li>Delayed or harsh gear shifting</li>
+            <li>Transmission fluid leaks</li>
+            <li>Vehicle slipping or not moving in gear</li>
+          </ul>
+
+          <h4 class="font-semibold text-gray-900 mb-2">Customer Benefits</h4>
+          <ul class="text-gray-500 text-sm space-y-1 mb-6 list-disc list-inside">
+            <li>Smooth and consistent gear shifting</li>
+            <li>Reduced risk of major transmission damage</li>
+            <li>Improved driving performance</li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-3 py-1 bg-brand/10 text-brand text-xs font-semibold rounded-full">Scheduled service</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Transmission flush</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Pan gasket replacement</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AC & Heating -->
+  <section id="ac" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="order-2 lg:order-1">
+          <h2 class="font-display font-bold text-3xl text-gray-900 mb-3">Air Conditioning & Heating Repair</h2>
+          <div class="w-12 h-1 bg-accent mb-5"></div>
+          <p class="text-gray-500 leading-relaxed mb-5">We diagnose and repair automotive heating and air conditioning systems, including compressors, evaporators, condensers, and blower motors. Our technicians perform refrigerant recharge, leak detection, and electrical diagnostics to restore cabin comfort and proper airflow.</p>
+
+          <h4 class="font-semibold text-gray-900 mb-2">Common Problems We Fix</h4>
+          <ul class="text-gray-500 text-sm space-y-1 mb-5 list-disc list-inside">
+            <li>Weak airflow or no cold air</li>
+            <li>Strange odors from air vents</li>
+            <li>Heater not producing warm air</li>
+          </ul>
+
+          <h4 class="font-semibold text-gray-900 mb-2">Customer Benefits</h4>
+          <ul class="text-gray-500 text-sm space-y-1 mb-6 list-disc list-inside">
+            <li>Comfortable cabin temperature year-round</li>
+            <li>Improved windshield defrost performance</li>
+            <li>Proper operation of the HVAC system</li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-3 py-1 bg-brand/10 text-brand text-xs font-semibold rounded-full">Scheduled service</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Cabin air filter replacement</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">System deodorizing</span>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded order-1 lg:order-2">
+          <img src="/images/service04.jpg" alt="AC Repair Sacramento" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Suspension -->
+  <section id="suspension" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="overflow-hidden rounded">
+          <img src="/images/service05.jpg" alt="Suspension Repair Sacramento" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div>
+          <h2 class="font-display font-bold text-3xl text-gray-900 mb-3">Suspension & Steering Repair</h2>
+          <div class="w-12 h-1 bg-accent mb-5"></div>
+          <p class="text-gray-500 leading-relaxed mb-5">Our technicians inspect and repair shocks, struts, tie rods, ball joints, sway bars, and power steering systems. We identify worn components and restore proper suspension geometry so your vehicle drives smoothly and safely on city streets and highways.</p>
+
+          <h4 class="font-semibold text-gray-900 mb-2">Common Problems We Fix</h4>
+          <ul class="text-gray-500 text-sm space-y-1 mb-5 list-disc list-inside">
+            <li>Uneven tire wear</li>
+            <li>Steering wheel vibration</li>
+            <li>Clunking sounds over bumps</li>
+          </ul>
+
+          <h4 class="font-semibold text-gray-900 mb-2">Customer Benefits</h4>
+          <ul class="text-gray-500 text-sm space-y-1 mb-6 list-disc list-inside">
+            <li>Improved ride comfort</li>
+            <li>Safer and more responsive steering</li>
+            <li>Longer tire lifespan</li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-3 py-1 bg-brand/10 text-brand text-xs font-semibold rounded-full">Same-day available</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">4-wheel alignment add-on</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Power steering flush</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Oil Change -->
+  <section id="oil" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div class="order-2 lg:order-1">
+          <h2 class="font-display font-bold text-3xl text-gray-900 mb-3">Oil Change & Preventative Maintenance</h2>
+          <div class="w-12 h-1 bg-accent mb-5"></div>
+          <p class="text-gray-500 leading-relaxed mb-5">Our maintenance services include oil and filter changes, multi-point inspections, fluid top-offs, and checks of belts, hoses, and filters. By following manufacturer service intervals, we help keep vehicles reliable and reduce the risk of unexpected mechanical problems.</p>
+
+          <h4 class="font-semibold text-gray-900 mb-2">Common Problems We Address</h4>
+          <ul class="text-gray-500 text-sm space-y-1 mb-5 list-disc list-inside">
+            <li>Low or dirty engine oil</li>
+            <li>Worn filters</li>
+            <li>Neglected maintenance schedules</li>
+          </ul>
+
+          <h4 class="font-semibold text-gray-900 mb-2">Customer Benefits</h4>
+          <ul class="text-gray-500 text-sm space-y-1 mb-6 list-disc list-inside">
+            <li>Extended engine life</li>
+            <li>Reduced risk of breakdowns</li>
+            <li>Improved fuel efficiency</li>
+          </ul>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-3 py-1 bg-brand/10 text-brand text-xs font-semibold rounded-full">Same-day available</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Tire rotation add-on</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Air filter replacement</span>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded order-1 lg:order-2">
+          <img src="/images/service06.jpg" alt="Oil Change Sacramento" class="w-full h-80 object-cover hover:scale-105 transition-transform duration-500" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="relative py-20 overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="/images/cta01.jpg" alt="Auto repair shop" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-brand/85"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+      <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-3">Call us : +1 (916) 927-4126</p>
+      <h2 class="font-display font-bold text-3xl lg:text-4xl text-white mb-5">Ready to get your vehicle serviced?</h2>
+      <a href="/contact" class="inline-flex items-center px-8 py-4 bg-white text-brand font-bold rounded hover:bg-gray-100 transition-colors">
+        Request Service Today
+      </a>
+    </div>
+  </section>
+
+  <Footer />
+</MainLayout>

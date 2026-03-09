@@ -1,0 +1,420 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<MainLayout title="Home">
+  <Header />
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-[580px] lg:min-h-[640px] flex items-center overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="/images/hero01.jpg" alt="Auto repair Sacramento" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-brand/80"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full py-20">
+      <div class="max-w-2xl">
+        <p class="text-accent font-semibold text-sm uppercase tracking-wider mb-3">Welcome to Precision Auto</p>
+        <h1 class="font-display font-bold text-4xl lg:text-6xl text-white leading-tight mb-5">
+          ASE-Certified Mechanics You Can Trust.
+        </h1>
+        <p class="text-blue-200 text-lg mb-8 leading-relaxed">
+          Modern diagnostics, transparent pricing, and same-day service for Sacramento drivers and fleets. Since 2011.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/contact" class="inline-flex items-center px-7 py-3 bg-white text-brand font-bold rounded hover:bg-gray-100 transition-colors">
+            Request Service
+          </a>
+          <a href="/services" class="inline-flex items-center gap-2 px-7 py-3 border-2 border-white text-white font-bold rounded hover:bg-white/10 transition-colors">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            View Services
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Inline appointment bar -->
+    <div class="absolute bottom-0 left-0 right-0 bg-white/10 backdrop-blur-sm border-t border-white/20 hidden lg:block">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex items-center gap-4">
+        <form action="https://formsubmit.co/roccify@gmail.com" method="POST" class="flex gap-3 w-full">
+          <input type="hidden" name="_next" value="/thank-you" />
+          <input type="hidden" name="_subject" value="Service Request - Homepage" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="name" placeholder="Your name" required class="flex-1 px-4 py-2 rounded text-sm bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white" />
+          <input type="email" name="email" placeholder="Email address" required class="flex-1 px-4 py-2 rounded text-sm bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white" />
+          <button type="submit" class="px-6 py-2 bg-accent hover:bg-accent-dark text-dark font-bold text-sm rounded transition-colors whitespace-nowrap">
+            Book Appointment
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO SPLIT SECTION -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="font-display font-bold text-3xl lg:text-4xl text-gray-900 mb-4">
+            We strive for excellence in everything we do.
+          </h2>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Precision Auto Diagnostics & Repair has been serving Sacramento drivers and local fleets since 2011. Our ASE-certified technicians combine advanced diagnostic equipment with honest communication so you always know exactly what your vehicle needs — and why.
+          </p>
+          <a href="/about" class="inline-flex items-center px-6 py-3 bg-brand text-white font-semibold text-sm rounded hover:bg-brand-dark transition-colors">
+            Learn more about us
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="relative overflow-hidden rounded">
+            <img src="/images/about01.jpg" alt="Professional mechanic" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500" />
+            <div class="absolute bottom-0 left-0 right-0 bg-brand/80 py-2 px-3">
+              <p class="text-white text-xs font-semibold">ASE-Certified Technicians</p>
+            </div>
+          </div>
+          <div class="relative overflow-hidden rounded mt-6">
+            <img src="/images/service01.jpg" alt="Engine diagnostics" class="w-full h-48 object-cover hover:scale-105 transition-transform duration-500" />
+            <div class="absolute bottom-0 left-0 right-0 bg-brand/80 py-2 px-3">
+              <p class="text-white text-xs font-semibold">Best price available</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS ROW -->
+  <section class="py-12 bg-gray-50 border-t border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="font-display font-bold text-4xl text-brand mb-1">15+</div>
+          <div class="text-sm text-gray-500 font-medium">Years of Experience</div>
+        </div>
+        <div>
+          <div class="font-display font-bold text-4xl text-brand mb-1">8</div>
+          <div class="text-sm text-gray-500 font-medium">Certified Technicians</div>
+        </div>
+        <div>
+          <div class="font-display font-bold text-4xl text-brand mb-1">10k+</div>
+          <div class="text-sm text-gray-500 font-medium">Repairs Completed</div>
+        </div>
+        <div>
+          <div class="font-display font-bold text-4xl text-brand mb-1">4.9★</div>
+          <div class="text-sm text-gray-500 font-medium">Average Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="font-display font-bold text-3xl lg:text-4xl text-gray-900 mb-3">Our Services</h2>
+        <p class="text-gray-500 max-w-xl mx-auto">Take care of your vehicle with professional diagnostics and repairs from Sacramento's trusted ASE-certified mechanics.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="group bg-white border border-gray-200 hover:border-brand hover:shadow-lg transition-all duration-300 overflow-hidden rounded">
+          <div class="overflow-hidden h-48">
+            <img src="/images/service02.jpg" alt="Brake Repair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display font-bold text-xl text-gray-900 mb-2">Brake Repair & Replacement</h3>
+            <p class="text-gray-500 text-sm mb-4 leading-relaxed">Complete brake inspections, pad and rotor replacement, and system repairs to restore safe stopping performance.</p>
+            <a href="/services#brakes" class="inline-flex items-center px-5 py-2 bg-brand text-white text-sm font-semibold rounded hover:bg-brand-dark transition-colors">
+              About this service
+            </a>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="group bg-white border border-gray-200 hover:border-brand hover:shadow-lg transition-all duration-300 overflow-hidden rounded">
+          <div class="overflow-hidden h-48">
+            <img src="/images/service01.jpg" alt="Engine Diagnostics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display font-bold text-xl text-gray-900 mb-2">Engine Diagnostics</h3>
+            <p class="text-gray-500 text-sm mb-4 leading-relaxed">Modern scan tools and testing procedures to diagnose check engine lights and performance issues quickly and accurately.</p>
+            <a href="/services#engine" class="inline-flex items-center px-5 py-2 bg-brand text-white text-sm font-semibold rounded hover:bg-brand-dark transition-colors">
+              About this service
+            </a>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="group bg-white border border-gray-200 hover:border-brand hover:shadow-lg transition-all duration-300 overflow-hidden rounded">
+          <div class="overflow-hidden h-48">
+            <img src="/images/service03.jpg" alt="Transmission Service" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display font-bold text-xl text-gray-900 mb-2">Transmission Service & Repair</h3>
+            <p class="text-gray-500 text-sm mb-4 leading-relaxed">Fluid service, diagnostics, and repairs that help maintain smooth shifting and transmission reliability.</p>
+            <a href="/services#transmission" class="inline-flex items-center px-5 py-2 bg-brand text-white text-sm font-semibold rounded hover:bg-brand-dark transition-colors">
+              About this service
+            </a>
+          </div>
+        </div>
+        <!-- Service 4 -->
+        <div class="group bg-white border border-gray-200 hover:border-brand hover:shadow-lg transition-all duration-300 overflow-hidden rounded">
+          <div class="overflow-hidden h-48">
+            <img src="/images/service04.jpg" alt="AC & Heating" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display font-bold text-xl text-gray-900 mb-2">AC & Heating Repair</h3>
+            <p class="text-gray-500 text-sm mb-4 leading-relaxed">Restore cold air in summer and reliable heating in winter with professional HVAC service and refrigerant recharge.</p>
+            <a href="/services#ac" class="inline-flex items-center px-5 py-2 bg-brand text-white text-sm font-semibold rounded hover:bg-brand-dark transition-colors">
+              About this service
+            </a>
+          </div>
+        </div>
+        <!-- Service 5 -->
+        <div class="group bg-white border border-gray-200 hover:border-brand hover:shadow-lg transition-all duration-300 overflow-hidden rounded">
+          <div class="overflow-hidden h-48">
+            <img src="/images/service05.jpg" alt="Suspension & Steering" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display font-bold text-xl text-gray-900 mb-2">Suspension & Steering</h3>
+            <p class="text-gray-500 text-sm mb-4 leading-relaxed">Improve handling, comfort, and tire life with professional suspension and steering service.</p>
+            <a href="/services#suspension" class="inline-flex items-center px-5 py-2 bg-brand text-white text-sm font-semibold rounded hover:bg-brand-dark transition-colors">
+              About this service
+            </a>
+          </div>
+        </div>
+        <!-- Service 6 -->
+        <div class="group bg-white border border-gray-200 hover:border-brand hover:shadow-lg transition-all duration-300 overflow-hidden rounded">
+          <div class="overflow-hidden h-48">
+            <img src="/images/service06.jpg" alt="Oil Change" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-6">
+            <h3 class="font-display font-bold text-xl text-gray-900 mb-2">Oil Change & Maintenance</h3>
+            <p class="text-gray-500 text-sm mb-4 leading-relaxed">Regular oil changes and multi-point inspections that help prevent costly breakdowns and extend engine life.</p>
+            <a href="/services#oil" class="inline-flex items-center px-5 py-2 bg-brand text-white text-sm font-semibold rounded hover:bg-brand-dark transition-colors">
+              About this service
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER / DARK FULL WIDTH -->
+  <section class="relative py-24 overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="/images/hero02.jpg" alt="Auto repair shop" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-brand/85"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Left: inset image + button -->
+        <div class="relative hidden lg:block">
+          <img src="/images/about02.jpg" alt="Mechanic at work" class="w-72 h-64 object-cover rounded shadow-2xl" />
+          <div class="absolute -bottom-4 left-4 bg-brand border border-accent px-5 py-3 rounded shadow-lg">
+            <a href="/services#engine" class="text-white font-semibold text-sm flex items-center gap-2">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              View all services
+            </a>
+          </div>
+        </div>
+        <!-- Right: text -->
+        <div>
+          <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-3">Welcome to Precision Auto</p>
+          <h2 class="font-display font-bold text-3xl lg:text-5xl text-white leading-tight mb-5">
+            We strive for excellence in everything we do.
+          </h2>
+          <p class="text-blue-200 mb-8 leading-relaxed">
+            From a simple oil change to complex engine diagnostics, our certified team handles it all with precision, transparency, and care for your vehicle.
+          </p>
+          <a href="/contact" class="inline-flex items-center px-7 py-3 bg-white text-brand font-bold rounded hover:bg-gray-100 transition-colors">
+            Request Service
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES / WHY CHOOSE US -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="font-display font-bold text-3xl lg:text-4xl text-gray-900 mb-3">Why Choose Precision Auto?</h2>
+        <p class="text-gray-500 max-w-xl mx-auto">We combine advanced technology with honest service to keep Sacramento vehicles running safely.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="bg-brand text-white p-8 rounded hover:bg-brand-dark transition-colors">
+          <div class="mb-4">
+            <svg class="w-10 h-10 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-xl mb-2">Digital Inspection Reports</h3>
+          <p class="text-blue-200 text-sm leading-relaxed">Real-time digital vehicle inspection with photos so you see exactly what needs attention before approving any work.</p>
+        </div>
+        <div class="bg-accent text-dark p-8 rounded hover:bg-accent-dark transition-colors">
+          <div class="mb-4">
+            <svg class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-xl mb-2">Same-Day Service</h3>
+          <p class="text-orange-100 text-sm leading-relaxed">Same-day service available for many common repairs. We respect your time and work efficiently to get you back on the road fast.</p>
+        </div>
+        <div class="bg-brand text-white p-8 rounded hover:bg-brand-dark transition-colors">
+          <div class="mb-4">
+            <svg class="w-10 h-10 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-xl mb-2">Transparent Pricing</h3>
+          <p class="text-blue-200 text-sm leading-relaxed">Itemized estimates before work begins. No hidden fees, no surprises. Diagnostics fee plus clear labor and parts breakdown.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (Blue background) -->
+  <section class="py-16 lg:py-20 bg-brand">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <div class="text-accent text-2xl mb-2">★★★★★</div>
+        <h2 class="font-display font-bold text-3xl text-white mb-1">Average 5-star reviews</h2>
+        <p class="text-blue-200 text-sm">Based on hundreds of Sacramento customer reviews</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-brand-light rounded p-6 border border-blue-500">
+          <div class="text-accent text-lg mb-3">★★★★★</div>
+          <p class="text-blue-100 text-sm leading-relaxed mb-4 italic">"Took my truck in for a check engine light. They diagnosed it fast, showed me photos of the issue, and had it fixed the same day. Transparent pricing — no surprises. Will definitely be back."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-dark font-bold text-sm">M</div>
+            <div>
+              <div class="text-white font-semibold text-sm">Mike R.</div>
+              <div class="text-blue-300 text-xs">Sacramento, CA</div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-brand-light rounded p-6 border border-blue-500">
+          <div class="text-accent text-lg mb-3">★★★★★</div>
+          <p class="text-blue-100 text-sm leading-relaxed mb-4 italic">"Best auto shop in Sacramento. Brought my car in for brakes and they were thorough, honest, and fast. The digital inspection report was a game changer — I could see exactly what was wrong."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-dark font-bold text-sm">L</div>
+            <div>
+              <div class="text-white font-semibold text-sm">Laura S.</div>
+              <div class="text-blue-300 text-xs">Elk Grove, CA</div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-brand-light rounded p-6 border border-blue-500">
+          <div class="text-accent text-lg mb-3">★★★★★</div>
+          <p class="text-blue-100 text-sm leading-relaxed mb-4 italic">"I run a small delivery fleet and Precision Auto handles all our maintenance. They understand our schedule, get vehicles back fast, and the pricing is always fair and itemized."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-dark font-bold text-sm">D</div>
+            <div>
+              <div class="text-white font-semibold text-sm">David K.</div>
+              <div class="text-blue-300 text-xs">Rancho Cordova, CA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPLIT SECTION: Excellence -->
+  <section class="py-16 lg:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="font-display font-bold text-3xl lg:text-4xl text-gray-900 mb-4">
+            Let us take care of all your vehicle's mechanical needs.
+          </h2>
+          <p class="text-gray-500 leading-relaxed mb-6">
+            Whether it's a routine oil change or complex transmission work, our certified technicians have the tools and expertise to diagnose and repair it right the first time. We serve Sacramento, Elk Grove, Citrus Heights, Rancho Cordova, and North Highlands.
+          </p>
+          <a href="/about" class="inline-flex items-center px-6 py-3 bg-brand text-white font-semibold text-sm rounded hover:bg-brand-dark transition-colors">
+            Learn more about us
+          </a>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img src="/images/gallery01.jpg" alt="Auto repair work" class="w-full h-48 object-cover rounded hover:opacity-90 transition-opacity" />
+          <div class="space-y-4">
+            <img src="/images/gallery02.jpg" alt="Mechanic at work" class="w-full h-22 object-cover rounded hover:opacity-90 transition-opacity" />
+            <img src="/images/gallery03.jpg" alt="Vehicle service" class="w-full h-22 object-cover rounded hover:opacity-90 transition-opacity" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM MEMBERS -->
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <h2 class="font-display font-bold text-3xl text-gray-900 mb-10">Our Team</h2>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="overflow-hidden rounded mb-3">
+            <img src="/images/team01.jpg" alt="Team member" class="w-full h-52 object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <h3 class="font-semibold text-gray-900">James Martinez</h3>
+          <p class="text-sm text-gray-500">Lead Technician</p>
+        </div>
+        <div class="text-center">
+          <div class="overflow-hidden rounded mb-3">
+            <img src="/images/team02.jpg" alt="Team member" class="w-full h-52 object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <h3 class="font-semibold text-gray-900">Sandra Lee</h3>
+          <p class="text-sm text-gray-500">Service Advisor</p>
+        </div>
+        <div class="text-center">
+          <div class="overflow-hidden rounded mb-3">
+            <img src="/images/team03.jpg" alt="Team member" class="w-full h-52 object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <h3 class="font-semibold text-gray-900">Carlos Rivera</h3>
+          <p class="text-sm text-gray-500">ASE Master Tech</p>
+        </div>
+        <div class="text-center">
+          <div class="overflow-hidden rounded mb-3">
+            <img src="/images/team04.jpg" alt="Team member" class="w-full h-52 object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <h3 class="font-semibold text-gray-900">Tom Wilson</h3>
+          <p class="text-sm text-gray-500">Diagnostic Specialist</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUMBERED PROCESS SECTION -->
+  <section class="py-0">
+    <div class="grid grid-cols-1 lg:grid-cols-3">
+      <!-- 01 -->
+      <div class="relative min-h-64 overflow-hidden">
+        <img src="/images/service01.jpg" alt="Diagnostic service" class="w-full h-full object-cover absolute inset-0" />
+        <div class="absolute inset-0 bg-brand/70"></div>
+        <div class="relative z-10 p-8 flex flex-col justify-end h-full min-h-64">
+          <div class="font-display font-bold text-6xl text-accent/60 leading-none mb-2">01</div>
+          <h3 class="font-display font-bold text-2xl text-white mb-2">Diagnostic Service</h3>
+          <p class="text-blue-200 text-sm leading-relaxed">We scan for error codes, test components, and provide a clear digital report with photos of any issues found.</p>
+        </div>
+      </div>
+      <!-- 02 -->
+      <div class="relative min-h-64 overflow-hidden">
+        <img src="/images/about01.jpg" alt="Vehicle inspection" class="w-full h-full object-cover absolute inset-0" />
+        <div class="absolute inset-0 bg-brand-dark/70"></div>
+        <div class="relative z-10 p-8 flex flex-col justify-end h-full min-h-64">
+          <div class="font-display font-bold text-6xl text-accent/60 leading-none mb-2">02</div>
+          <h3 class="font-display font-bold text-2xl text-white mb-2">Vehicle Inspection</h3>
+          <p class="text-blue-200 text-sm leading-relaxed">Multi-point inspection covering brakes, fluids, belts, tires, and all major systems. Documented with photos.</p>
+        </div>
+      </div>
+      <!-- 03 -->
+      <div class="relative min-h-64 overflow-hidden">
+        <img src="/images/hero02.jpg" alt="Performance repair" class="w-full h-full object-cover absolute inset-0" />
+        <div class="absolute inset-0 bg-brand/70"></div>
+        <div class="relative z-10 p-8 flex flex-col justify-end h-full min-h-64">
+          <div class="font-display font-bold text-6xl text-accent/60 leading-none mb-2">03</div>
+          <h3 class="font-display font-bold text-2xl text-white mb-2">Quality Repairs</h3>
+          <p class="text-blue-200 text-sm leading-relaxed">All repairs use OEM or equivalent parts. We explain every step and only proceed with your approval.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</MainLayout>
